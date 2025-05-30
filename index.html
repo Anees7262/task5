@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Stats Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS (Updated to a valid recent version) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-custom-yellow">
+    <div class="container-fluid">
+        <!-- Mobile Toggler Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Centered Navigation Content -->
+        <div class="collapse navbar-collapse justify-content-center align-items-center" id="mainNavbar">
+            <!-- Left Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="#">Happiness</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="#">Books</a>
+                </li>
+            </ul>
+
+            <!-- Logo (Brand) in the Middle -->
+            <a class="navbar-brand mx-3 d-none d-lg-block" href="#">
+                <img src="Vector Smart Object (Double Click to Edit) (1).png" alt="The Happy Stats Logo - Brand">
+            </a>
+
+            <!-- Right Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Logo for mobile view, appears when navbar is not collapsed and toggler is hidden -->
+        <a class="navbar-brand d-lg-none mx-auto" href="#">
+             <img src="Vector Smart Object (Double Click to Edit) (1).png" alt="The Happy Stats Logo - Mobile" style="height: 30px;">
+        </a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section py-5">
+    <div class="container-fluid">
+        <div class="row g-0 g-lg-5">
+            <!-- Text Column -->
+            <div class="col-lg-3 offset-lg-1 d-flex flex-column justify-content-center p-3 p-lg-0 text-column">
+                <p class="text-uppercase fw-bold new-course-text">NEW COURSE</p>
+                <h1 class="hero-heading text-uppercase mb-3">
+                    HOW HAPPY<br>ARE YOU?
+                </h1>
+                <p class="lead mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                </p>
+                <div class="mt-auto mt-lg-0">
+                    <a href="#" class="btn btn-custom-yellow px-4 py-2">Read more</a>
+                </div>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-lg-6 offset-lg-2 hero-image-col d-none d-lg-block">
+                <img src="Place Your Image Here (Double Click to Edit)2.png"
+                     alt="Couple smiling and holding hands"
+                     class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Happiness in Numbers Section -->
+<div class="container super">
+    <div class="row align-items-center">
+        <!-- Left Column: Charts -->
+        <div class="col-lg-6 col-md-12">
+            <div class="row">
+                <div class="col-md-4 offset-md-1 mb-4 mb-md-0 chart-image-container">
+                    <img src="Graphics.png" alt="Pie Chart showing happiness statistics" class="pie-chart-img img-fluid">
+                </div>
+                <div class="col-md-4 offset-md-1 chart-image-container">
+                    <img src="Graphic (1).png" alt="Radial Progress showing 35%" class="radial-ticks-img img-fluid">
+                </div>
+            </div>
+        </div>
+        <!-- Right Column: Text -->
+        <div class="col-lg-4 col-md-12 content-column">
+            <h2>HAPPINESS<br>IN NUMBERS</h2>
+            <p>
+                Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut
+            </p>
+            <a href="#" class="read-more-link">Read More ></a>
+        </div>
+    </div>
+</div>
+
+<!-- We Can Help You To Be Happy Section -->
+<section class="section-happy-help">
+    <div class="container py-5">
+        <div class="row align-items-center text-lg-end cctv"> <!-- Heading row -->
+            <div class="col-12">
+                <h2 class="display-5 text-uppercase happy-help-heading mb-3 mb-md-4">
+                    WE CAN HELP YOU<br>TO BE HAPPY
+                </h2>
+            </div>
+        </div>
+        <!-- Content row -->
+        <div class="row align-items-center">
+            <div class="col-md-7 mb-4 mb-md-0 left-col-image">
+                <img src="Place Your Image Here (Double Click to Edit)4.png"
+                     class="img-fluid rounded" alt="Person finding happiness by meditating">
+            </div>
+            <div class="col-md-4 offset-md-1 right-col-content px-lg-5">
+                <img src="Graphic.png"
+                     alt="Happiness statistics pie chart graphic"
+                     class="pie-chart-img img-fluid mb-3 mb-md-4">
+                <div class="mt-auto mt-md-0">
+                    <a href="#" class="btn btn-custom-yellow px-4 py-2">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- % Happiness Card Section -->
+<div class="card happiness-card border-0"> <!-- Added happiness-card class and border-0 -->
+    <div class="container py-5">
+        <div class="row py-5 align-items-center">
+            <div class="col-md-4 offset-md-1">
+                <img src="Graphic (1).png" class="llb img-fluid" alt="Percentage happiness graphic"><br>
+                <h1 class="mt-4">% HAPPINESS</h1>
+                <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Quis ipsum suspendisse
+                    ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                <div class="mt-auto mt-lg-0">
+                    <a href="#" class="btn btn-custom-yellow2 px-4 py-2">Read more</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="Place Your Image Here (Double Click to Edit)2.png" alt="Happy couple" class="llb2 img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Our Philosophy Section -->
+<section class="yellow">
+    <div class="container text-center py-5">
+        <img src="Place Your Image Here (Double Click to Edit)3.png" alt="Our Philosophy graphic collage" class="yel img-fluid">
+        <h1 class="mt-4">OUR PHILOSOPHY</h1>
+        <P class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br>
+             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</P>
+             <a href="#" class="btn btn-custom-yellow2 px-4 py-2 mt-3">Read more</a>
+    </div>
+</section>
+
+<!-- Work With Us Section -->
+<section class="work-with py-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-4 my-auto">
+                <h1>WORK <br> WITH US</h1>
+                <P class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                     Risus commodo </P>
+                     <a href="#" class="btn btn-custom-yellow2 px-4 py-2 mt-3">Read more</a>
+            </div>
+            <div class="col-md-7 offset-md-1">
+                <img src="Place Your Image Here (Double Click to Edit)4.png" alt="Team working together" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Try Our Method Section -->
+<section class="gray py-5">
+    <div class="container py-5">
+        <div class="row ">
+            <div class="col-md-6">
+                <img src="Place Your Image Here (Double Click to Edit)2.png" alt="Smiling couple using method" class="hath img-fluid">
+            </div>
+            <div class="col-md-5 offset-md-1 my-auto">
+                <h1 class="heal text-uppercase">Try our method <br>
+    for free</h1>
+    <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+           <a href="#" class="btn btn-custom-yellow3 px-4 py-2 mt-3">Read more</a>
+    </div>
+        </div>
+    </div>
+</section>
+
+<!-- Subscribe Section -->
+<section class="farm">
+    <div class="container py-5">
+        <div class="row py-5 align-items-center">
+            <div class="col-md-4 my-auto">
+                <h1>SUBSCRIBE TO<br>OUR NEWSLETTER</h1>
+    <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+           <a href="#" class="btn btn-custom-yellow2 px-4 py-2">Subscribe</a>
+    </div>
+            <div class="col-md-6 offset-md-1">
+                <div class="dark-form-container p-4 p-md-5">
+                     <form>
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="surname" class="form-label">Surname</label>
+                                    <input type="text" class="form-control" id="surname" placeholder="Enter your surname">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Choose a password">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Your message..."></textarea>
+                            </div>
+                            <!-- Submit button would typically go here if it was a real form submission -->
+                            <!-- <button type="submit" class="btn btn-light w-100">Submit</button> -->
+                        </form>
+    <div class="lorem-text mt-4">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- Contact Section -->
+<section class="map py-5">
+    <div class="container text-center py-5">
+        <img src="Place Your Image Here (Double Click to Edit) (1).png" alt="Happy Stats Location Pin Icon" class="img-fluid contact-map-icon mb-4">
+       <div class="row justify-content-center">
+           <div class="col-md-8 col-lg-6">
+             <h1>Contact</h1>
+            <P>Lorem ipsum dolor sit amet, consectetur</P>
+            <a href="#" class="btn btn-custom-yellow5 px-4 py-2">Contact us</a>
+           </div>
+    </div></div>
+</section>
+
+<!-- Footer Section -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row pb-2 align-items-center">
+            <!-- Logo Column -->
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 footer-logo">
+                <img src="Vector Smart Object (Double Click to Edit).png" alt="The Happy Stats Footer Logo" class="logu img-fluid">
+            </div>
+
+            <!-- Links Column 1 -->
+            <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0 footer-links">
+                <ul class="list-unstyled">
+                    <li><a href="#">Happiness</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Links Column 2 -->
+            <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0 footer-links">
+                <ul class="list-unstyled">
+                    <li><a href="#">Policy Privacy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Links / Empty Column on Desktop for spacing, on mobile stacks after links -->
+            <div class="col-lg-4 col-md-6 footer-social-container">
+                 <!-- Social icons will be moved below HR for better mobile stacking -->
+            </div>
+        </div>
+
+        <hr class="footer-divider my-3">
+
+        <div class="row align-items-center">
+            <!-- Copyright -->
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <p class="mb-0 footer-bottom-text">Copyright | YourName</p>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="col-md-6 text-center text-md-end footer-social-icons">
+                <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

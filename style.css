@@ -1,0 +1,614 @@
+/* Custom styles for the navbar */
+body {
+    background-color: #f8f9fa;
+    font-family: sans-serif; /* Adding a common sans-serif font */
+    overflow-x: hidden; /* Prevent horizontal scroll issues globally */
+}
+.navbar-custom-yellow {
+    background-color: #FFD700;
+}
+.navbar-brand img {
+    height: 30px;
+}
+/* More specific selector for nav-link color */
+.navbar-custom-yellow .navbar-nav .nav-link {
+    color: #000000;
+    font-weight: bold;
+}
+.navbar-custom-yellow .navbar-nav .nav-link:hover,
+.navbar-custom-yellow .navbar-nav .nav-link:focus {
+    color: #333333; /* Darken on hover/focus */
+}
+
+.navbar-toggler {
+    border-color: rgba(0,0,0,.3);
+}
+.navbar-toggler-icon {
+    /* This replaces the default Bootstrap hamburger. Ensure the image is suitable as a small icon. */
+    background-image: url("Vector Smart Object (Double Click to Edit) (1).png"); /* Make sure this image is small and icon-like */
+    background-size: contain; /* Helps fit the image into the icon area */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.new-course-text {
+    font-size: 0.8rem;
+    letter-spacing: 0.075em;
+    margin-bottom: 0.5rem;
+}
+.hero-heading {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-weight: 900;
+}
+.btn-custom-yellow {
+    background-color: #FFD700;
+    border-color: #FFD700;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 0.25rem; /* Slightly rounded corners */
+}
+.btn-custom-yellow:hover {
+    background-color: #e6c200;
+    border-color: #e6c200;
+    color: #000000;
+}
+
+@media (max-width: 991.98px) { /* lg breakpoint */
+    .hero-section .text-column {
+        text-align: center;
+        order: 1; /* Ensure text comes first if image is shown on mobile */
+    }
+     .hero-heading {
+        font-size: 2.8rem;
+    }
+    .hero-section .btn-custom-yellow {
+        display: inline-block;
+    }
+    .hero-image-col {
+        order: 2;
+        margin-top: 2rem; /* Space if image shown below text on mobile */
+    }
+}
+
+@media (max-width: 767.98px) { /* md breakpoint */
+    .hero-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .hero-heading {
+        font-size: 2.2rem;
+    }
+    .new-course-text, .hero-section .lead {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* "Super" Section - Happiness in Numbers */
+.container.super { /* Specific to the HTML structure <div class="container super"> */
+    background-color: #e9e9e9;
+    position: relative;
+    margin-top: -80px; /* Negative margin to overlap hero */
+    margin-left: auto; /* Center the container */
+    margin-right: auto; /* Center the container */
+    margin-bottom: 2rem; /* Space below */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 1; /* To ensure it's above the hero image if it overlaps */
+    padding-top: 30px; /* Add padding as it's also a container */
+    padding-bottom: 30px;
+}
+
+.chart-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem; /* Space below charts on mobile */
+}
+/* img-fluid class in HTML will handle responsiveness for images within */
+.pie-chart-img {
+    max-width: 150px;
+}
+.radial-ticks-img {
+    max-width: 160px;
+}
+
+.super .content-column h2 {
+    color: #fec503;
+    font-weight: 800;
+    font-size: 2.7rem;
+    line-height: 1.15;
+    margin-bottom: 15px;
+}
+.super .content-column p {
+    color: #555555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.super .content-column .read-more-link {
+    color: #222222;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+.super .content-column .read-more-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 991.98px) {
+    .container.super {
+        margin-top: -60px; /* Adjust overlap */
+    }
+}
+
+@media (max-width: 767.98px) {
+    .container.super {
+        position: static; /* No overlap on mobile, normal flow */
+        margin-top: 2rem; /* Replaces negative margin */
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        padding-left: 15px; /* Standard container padding for mobile */
+        padding-right: 15px;
+    }
+    .super .row > [class*="col-"] { /* Ensure columns stack correctly */
+        margin-bottom: 1.5rem;
+    }
+    .super .offset-md-1 {
+        margin-left: 0;
+    }
+    .super .content-column {
+        text-align: center;
+    }
+    .super .content-column h2 {
+        font-size: 2rem;
+    }
+    .super .pie-chart-img, .super .radial-ticks-img {
+        max-width: 120px;
+    }
+}
+
+
+/* Section Happy Help */
+.section-happy-help {
+    background-color: #000000;
+    color: #ffffff;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.section-happy-help .cctv {
+    padding-top: 100px; /* Default, adjust if .super overlaps more/less */
+    margin-bottom: 2rem;
+}
+.happy-help-heading {
+    color: #FFD700;
+    font-weight: 900;
+    line-height: 1.2;
+}
+.section-happy-help .left-col-image img {
+    /* img-fluid class handles width, object-fit can be useful for fixed height if desired */
+    /* height: 550px; /* Avoid fixed height for pure responsiveness */
+    object-fit: cover; /* If you re-add a fixed height */
+}
+.section-happy-help .right-col-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section-happy-help .right-col-content .pie-chart-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .section-happy-help .cctv.text-lg-end { /* Ensure alignment class applies */
+        text-align: end !important;
+    }
+    .section-happy-help .right-col-content {
+        align-items: flex-start;
+        text-align: left;
+    }
+    .section-happy-help .offset-md-1 {
+        margin-left: 8.333333%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .section-happy-help .cctv {
+        padding-top: 2rem;
+        text-align: center !important; /* Override text-lg-end */
+    }
+    .happy-help-heading {
+        font-size: 2.5rem;
+    }
+    .section-happy-help .left-col-image img {
+        /* height: 300px; /* Example if you need fixed height on mobile */
+        margin-bottom: 2rem;
+    }
+    .section-happy-help .right-col-content .pie-chart-img {
+        max-width: 150px;
+    }
+    .section-happy-help .col-md-4.offset-md-1 {
+        margin-left: 0;
+    }
+}
+
+
+/* Card Section - % HAPPINESS */
+.card.happiness-card {
+    background-color: #e9e9e9;
+}
+.card.happiness-card .llb {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+/* .llb2 uses img-fluid */
+.card.happiness-card h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.btn-custom-yellow2 {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 0;
+    border-style: none;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+}
+.btn-custom-yellow2:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+@media (max-width: 767.98px) {
+    .card.happiness-card .py-5 {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+    .card.happiness-card .col-md-4.offset-md-1 {
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .card.happiness-card h1 {
+        font-size: 1.8rem;
+    }
+    .card.happiness-card .llb {
+        max-width: 150px;
+    }
+    .card.happiness-card .mt-auto.mt-lg-0 {
+        text-align: center;
+    }
+}
+
+
+/* Yellow Section - OUR PHILOSOPHY */
+.yellow {
+    background-color: #e6c200;
+    text-align: center;
+}
+/* .yel uses img-fluid */
+.yellow h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+.yellow P {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+@media (max-width: 767.98px) {
+    .yellow .py-5 {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+    .yellow h1 {
+        font-size: 2rem;
+    }
+    .yellow P br {
+        display: none;
+    }
+    .yellow .yel {
+        max-width: 90%;
+    }
+}
+
+
+/* Work With Us Section */
+.work-with h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.work-with P {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+@media (max-width: 767.98px) {
+    .work-with .py-5 {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+    .work-with .col-md-4.my-auto {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .work-with .col-md-7.offset-md-1 {
+        margin-left: 0;
+    }
+    .work-with h1 {
+        font-size: 2rem;
+    }
+    .work-with h1 br {
+         display: none;
+    }
+}
+
+
+/* Gray Section - Try our method */
+.gray {
+    background-color: #e9e9e9;
+}
+/* .hath uses img-fluid */
+.gray .heal {
+    color: #e6c200;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.gray p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.btn-custom-yellow3 {
+    background-color: #e6c200;
+    border-radius: 0;
+    border-style: none;
+    font-weight: bold;
+    color: #000000;
+    padding: 0.5rem 1.5rem;
+}
+.btn-custom-yellow3:hover {
+    background-color: #cca300;
+}
+
+@media (max-width: 767.98px) {
+    .gray .py-5 {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+    .gray .col-md-6 {
+        margin-bottom: 2rem;
+    }
+    .gray .col-md-5.offset-md-1.my-auto {
+        margin-left: 0;
+        text-align: center;
+    }
+    .gray .heal {
+        font-size: 2rem;
+    }
+    .gray .heal br {
+        display: none;
+    }
+}
+
+
+/* Farm Section - SUBSCRIBE */
+.farm {
+    background-color: #e6c200;
+}
+.farm h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.farm p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.dark-form-container {
+    background-color: #000000;
+    color: #ffffff;
+    max-width: 100%;
+    border-radius: 4px;
+}
+.dark-form-container .form-label {
+    color: #ffffff;
+    margin-bottom: 0.3rem;
+    font-weight: 300;
+}
+.dark-form-container .form-control {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 0;
+}
+.dark-form-container .form-control::placeholder {
+    color: #aaa;
+    opacity: 1;
+}
+.dark-form-container .form-control:-ms-input-placeholder { color: #aaa; }
+.dark-form-container .form-control::-ms-input-placeholder { color: #aaa; }
+.dark-form-container .form-control:focus {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #FFD700;
+    box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25);
+}
+.dark-form-container .lorem-text {
+    font-size: 0.8rem;
+    color: #ccc;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 767.98px) {
+    .farm .py-5 {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+    .farm .col-md-4.my-auto {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .farm .col-md-6.offset-md-1 {
+        margin-left: 0;
+    }
+    .farm h1 {
+        font-size: 2rem;
+    }
+    .farm h1 br {
+        display: none;
+    }
+    .dark-form-container .p-4.p-md-5 {
+        padding: 1.5rem 1rem !important; /* Override more specific padding */
+    }
+}
+
+
+/* Map Section - Contact */
+.map {
+    background-color: white;
+    text-align: center;
+}
+.map .contact-map-icon { /* Added class for this specific image */
+    max-width: 150px;
+    height: auto;
+}
+.map h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.map P {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+.btn-custom-yellow5 {
+    background-color: #000000;
+    border-style: none;
+    color: #ffffff;
+    width: auto;
+    padding: 0.75rem 2rem;
+    border-radius: 0;
+    font-weight: bold;
+}
+.btn-custom-yellow5:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+@media (max-width: 767.98px) {
+    .map .py-5 {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+    .map .contact-map-icon {
+        max-width: 100px;
+    }
+    .map h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/* Footer */
+.site-footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+.footer-logo {
+    text-align: center;
+}
+.footer-logo img.logu {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+@media (min-width: 992px) {
+    .footer-logo {
+        text-align: left;
+    }
+}
+
+.site-footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+.site-footer a:hover {
+    color: #FFD700;
+    text-decoration: none;
+}
+.site-footer .list-unstyled {
+    padding-left: 0;
+}
+.site-footer .list-unstyled li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links {
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .footer-links {
+        text-align: left; /* Align left on md and up for link columns */
+    }
+}
+
+
+.footer-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.footer-bottom-text {
+    color: #FFD700;
+    font-size: 0.9rem;
+}
+.footer-social-icons a {
+    color: #FFD700;
+    font-size: 1.35rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    transition: color 0.2s ease-in-out;
+}
+.footer-social-icons a:hover {
+    color: #ffec80;
+}
+
+@media (max-width: 767.98px) {
+    .footer-logo,
+    .footer-links {
+        margin-bottom: 1.5rem;
+    }
+    .footer-bottom-text,
+    .footer-social-icons {
+        text-align: center !important;
+        margin-bottom: 0.75rem;
+    }
+    .footer-social-icons {
+        margin-bottom: 0;
+    }
+    .footer-social-container { /* Hide the empty spacer on mobile */
+        display: none;
+    }
+}
+
